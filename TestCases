@@ -1,0 +1,51 @@
+// GET CALL
+*****************************
+1. Should be able to retrive all the user details using GET call and filter the results based on FirtName and email
+
+## output
+
+Filtered Users: [
+{ firstName: 'George', email: 'george.bluth@reqres.in' },
+{ firstName: 'Janet', email: 'janet.weaver@reqres.in' },
+{ firstName: 'Emma', email: 'emma.wong@reqres.in' },
+{ firstName: 'Eve', email: 'eve.holt@reqres.in' },
+{ firstName: 'Charles', email: 'charles.morris@reqres.in' },
+{ firstName: 'Tracey', email: 'tracey.ramos@reqres.in' }
+]
+
+2. Filter out user details by giving ID.
+
+## Output
+
+User Details for ID 2 {
+id: 2,
+email: 'janet.weaver@reqres.in',
+first_name: 'Janet',
+last_name: 'Weaver',
+avatar: 'https://reqres.in/img/faces/2-image.jpg'
+}
+
+3. Validate response code and user details.
+
+// POST and PUT CALL
+*****************************
+
+1) Create new user based on the test data created in the .json file and retrieve newly created ID. (Iterate the loop based on the testdata count)
+output
+------
+example:- Created User ID: 276
+
+2)Validate response code and user details.
+
+Update user information for created user in the previous step. 
+
+3) Update user information for created user in the previous step ( Update all the created user)
+example:
+
+  PUT /users/:id
+Updated user undefined: {
+  name: 'morpheus_updated',
+  job: 'leader_updated',
+  updatedAt: '2023-04-26T07:48:28.587Z'
+}
+Validate response code and user information for the updated record.
